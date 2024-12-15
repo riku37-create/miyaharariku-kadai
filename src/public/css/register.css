@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #f4ede8;
+    padding-bottom: 100px;
+}
+
+.content__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #8d6e63;
+}
+
+.form {
+    width: 600px;
+    padding: 40px 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    height: 40px;
+    color: red;
+    font-size: 10px;
+}
+
+
+.form__group--label {
+    display: block;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #4b3f38;
+    margin-bottom: 10px;
+}
+
+
+.form__group--text {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #f4ede8;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.form__group--text::placeholder {
+    color: #4b3f38;
+}
+
+
+.next__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.next__button {
+    width: 100px;
+    background-color: #8d6e63;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}

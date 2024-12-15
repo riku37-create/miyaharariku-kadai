@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #3a2d29;
+    text-align: center;
+}
+
+.thank-you-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.thank-you-background {
+    font-size: 15rem;
+    color: rgba(58, 45, 41, 0.1);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.thank-you-message {
+    position: relative;
+    z-index: 2;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    color: #3a2d29;
+    font-weight: bold;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #8c756a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #705d52;
+}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+.sub {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    gap: 10px;
+}
+
+
+.sub input,
+.sub select,
+.sub button {
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid #ccab94;
+    border-radius: 5px;
+}
+
+.sub__search {
+    width: 30%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__gender {
+    width: 10%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__category {
+    width: 20%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__date {
+    width: 15%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__submit {
+    width: 10%;
+    background-color: #8d6e63 ;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sub__reset {
+    width: 10%;
+    height: 41px;
+    display: flex;
+    border: 2px solid #ccab94;
+    align-items: center;
+    justify-content: center;
+    background-color:  #ccab94;
+}
+
+.reset {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.buttons {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.export-btn {
+    display: flex;
+    align-items: center;
+}
+
+.export {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 2px;
+    color: #8d6e63;
+    cursor: pointer;
+}
+
+.paginate .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.paginate .pagination .page-item {
+    margin: 0 3px; /* アイテム間の隙間 */
+}
+
+.paginate .pagination .page-link {
+    color: #5e4f41; /* 文字色 */
+    background-color: #fff; /* 背景色 */
+    border: 1px solid #ddd; /* 枠線 */
+    border-radius: 5px; /* 角丸 */
+    padding: 8px 12px; /* 内側の余白 */
+    transition: all 0.3s ease;
+}
+
+.paginate .pagination .page-item.active .page-link {
+    background-color: #8b7962; /* アクティブ背景色 */
+    color: #fff; /* 文字色 */
+    border-color: #8b7962;
+}
+
+.paginate .pagination .page-link:hover {
+    background-color: #e6e6e6; /* ホバー背景色 */
+    border-color: #bdbdbd;
+}
+
+.paginate .pagination .page-item.disabled .page-link {
+    color: #ccc; /* 無効リンクの色 */
+    pointer-events: none; /* 無効リンク */
+    background-color: #f9f9f9;
+}
+
+.contacts {
+    width: 80%;
+}
+
+.contacts__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-heading {
+    background-color: #a56b5d;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.contacts__table th,
+.contacts__table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.table__inner {
+    color: #333;
+}
+
+
+.detail {
+    padding: 5px 10px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.modal__wrapper button {
+    display: block;
+    margin: 20px auto;
+    background-color: #b79c83;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.modal__content {
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-inner th,
+.modal-inner td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0dbd6;
+}
+
+
+.modal-inner th {
+    text-align: left;
+    background-color: #f4ede5;
+    color: #4b3f38;
+    width: 30%;
+}
+
+
+.modal-inner td {
+    color: #4b3f38;
+}
+
+
+.modal-ttl--last {
+    background-color: #f4ede5;
+}
+
+.modal-data--last {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+

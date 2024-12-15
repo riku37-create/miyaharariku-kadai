@@ -1,0 +1,154 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form__group {
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.form__error {
+    width: 700px;
+    height: 20px;
+    color: red;
+    text-align: left;
+    font-size: small;
+}
+
+
+.label {
+    width: 30%;
+    font-weight: bold;
+}
+
+
+.mark {
+    color: red;
+}
+
+
+.name, .gender, .email, .phone, .address, .building,
+.inquiry-type, .inquiry-details {
+    width: 70%;
+}
+
+
+.name {
+    display: flex;
+    gap: 40px;
+}
+
+
+.last-name, .first-name {
+    height: 20px;
+    width: 50%;
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+
+.gender-male, .gender-female, .gender-other {
+    gap: 5px;
+}
+
+
+.email, .address, .building {
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.phone {
+    display: flex;
+    justify-content: center;
+}
+
+
+.phone-1, .phone-2, .phone-3 {
+    width: 140px;
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.phone__mark {
+    width: 40px;
+    text-align: center;
+}
+
+
+.inquiry-type {
+    width: 45%;
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.form__group:last-of-type {
+    height: 180px;
+}
+
+
+.inquiry-details {
+
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+
+.button__submit {
+    margin: 20px auto;
+    width: 100px;
+    height: 30px;
+    background-color: #705d52;
+    border: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

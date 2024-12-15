@@ -1,0 +1,86 @@
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.table {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+}
+
+
+.table__row {
+    width: 100%;
+}
+
+
+.table__header {
+    width: 30%;
+    padding: 0 30px;
+    background-color:#8c756a;
+    text-align: start;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.table__text {
+    width: 70%;
+    padding-left: 20px;
+}
+
+
+.table__text:first-child {
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.table__text input {
+    outline: none;
+    border: none;
+}
+
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+.submit__button {
+    width: 100px;
+    height: 30px;
+    background-color: #8c756a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.submit__correction {
+    color:#8c756a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

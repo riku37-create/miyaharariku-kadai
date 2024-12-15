@@ -36,6 +36,9 @@
     + DB_USERNAME=laravel_user
     + DB_PASSWORD=laravel_pass
 
+8.livewireをインストールしてください
+    $composer require livewire/livewire
+
 ##  使用技術
 ・Laravel Framework 8.83.8
 ・PHP
@@ -48,3 +51,16 @@
 以下はこのプロジェクトのデータベース構造を示すER図です。
 
 ![ER図](/contacts.drawio.png)
+
+
+## URL
+お問い合わせフォーム　http://localhost/
+お問い合わせフォーム確認　http://localhost/confirm
+サンクスページ　http://localhost/thanks
+登録ページ　http://localhost/register
+ログインページ　http://localhost/login
+管理画面　http://localhost/admin
+　
+
+## 実装できていないところ
+管理画面においての検索、モーダルウィンドウの表示。

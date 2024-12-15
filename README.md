@@ -36,7 +36,7 @@
     + DB_USERNAME=laravel_user
     + DB_PASSWORD=laravel_pass
 
-8.livewireをインストールしてください
+8.モーダルウィンドウを表示するためlivewireをインストールしてください
     $composer require livewire/livewire
 
 ##  使用技術

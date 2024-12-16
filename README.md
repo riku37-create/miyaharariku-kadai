@@ -3,28 +3,21 @@
 お問い合わせフォーム
 
 ##  環境構築
+```
 1.下記でディレクトリ内にクローンしてください
     $ git clone git@github.com:riku37-create/miyaharariku-kadai.git
 
-2.個人のリモートリポジトリを作成してください
-
-3.下記で作成したリポジトリに変更してください
-    $ git remote set-url origin 作成したリポジトリのurl
-    $ git add .
-    $ git commit -m "リモートリポジトリの変更"
-    $ git push origin main
-
-4.以下のコマンドでコンテナを作成します
+２.以下のコマンドでコンテナを作成します
     $ docker-compose up -d --build
 
-5.以下のコマンドでパッケージのインストールをします
+3.以下のコマンドでパッケージのインストールをします
     $ docker-compose exec php bash
     $ composer install
 
-6..envファイルは、.env.exampleファイルをコピーして作成します
+4..envファイルは、.env.exampleファイルをコピーして作成します
     $ cp .env.example .env
 
-7.VSCode から.envファイルの11行目以降を以下のように修正します
+5.VSCode から.envファイルの11行目以降を以下のように修正します
     DB_CONNECTION=mysql
     - DB_HOST=127.0.0.1
     + DB_HOST=mysql
@@ -36,12 +29,23 @@
     + DB_USERNAME=laravel_user
     + DB_PASSWORD=laravel_pass
 
-8.livewireをインストールしてください
-    $composer require livewire/livewire
+6. アプリケーションを実行できるようにPHPコンテナで以下のコマンドを打ちましょう
+    $ docker-compose exec php bash
+    $ php artisan key:generate
+
+7. マイグレーション、シーディングを行うため以下のコードをうってください
+    $ php artisan migrate
+    $ php artisan db:seed
+
+8. 『he stream or file could not be opened』というエラーが出た場合は下記コマンドで権限設定をおねがいします
+sudo chmod -R 777 src/storage 
+```
 
 ##  使用技術
 ・Laravel Framework 8.83.8
-・PHP
+・PHP 7.4.9
+・mysql  Ver 8.0.26
+・nginx/1.21.1
 ・HTML
 ・CSS
 ・Livewire

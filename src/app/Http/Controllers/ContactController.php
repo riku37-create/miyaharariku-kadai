@@ -37,31 +37,24 @@ class ContactController extends Controller
         return view('thanks');
     }
 
-     // 名前で検索するスコープ
-    public function scopeSearch($query, $search)
+
+    public function admin()
     {
-        return $query->where(function ($q) use ($search) {
-            $q->where('first_name', 'like', "%{$search}%")
-            ->orWhere('last_name', 'like', "%{$search}%")
-            ->orWhere('email', 'like', "%{$search}%");
-        });
+        $contacts = Contact::with('category')->paginate(7);
+        $categories = Category::all();
+        return view('admin', compact('contacts', 'categories'));
     }
 
-     // 性別でフィルタリングするスコープ
-    public function scopeGender($query, $gender)
-    {
-        return $query->where('gender', $gender);
-    }
 
-     // 日付でフィルタリングするスコープ
-    public function scopeDate($query, $date)
+    public function search(Request $request)
     {
-        return $query->whereDate('created_at', $date);
-    }
-
-     // カテゴリーでフィルタリングするスコープ
-    public function scopeCategory($query, $category_id)
-    {
-        return $query->where('category_id', $category_id);
+        $contacts = Contact::with('category')
+        ->Search($request->search)
+        ->Gender($request->gender)
+        ->Date($request->date)
+        ->Category($request->category_id)
+        ->paginate(7);
+        $categories = Category::all();
+        return view('admin', compact('contacts', 'categories'));
     }
 }

@@ -15,23 +15,23 @@
 </head>
 
 
-@livewireScripts
 <body>
+    @livewireScripts
     <header class="header">
         <h1 class="header__title">FashionablyLate</h1>
-        @if (Request::is('admin'))
-        {{-- 管理画面の場合 --}}
-            <a class="header__link" href="/register">logout</a>
-        @endif
+        @if(request()->is('admin'))
+        <a class="header__link" href="/login">logout</a>
+        @endsection
     </header>
 
     <main>
         <div class="content">
             <div class="subtitle">
                 <h2 class="subtitle__title">@yield('subtitle')</h2>
-                @yield('search')
             </div>
-            @yield('content')
+            <div>
+                @yield('content')
+            </div>
         </div>
     </main>
 </body>

@@ -56,3 +56,72 @@ body {
     font-family: 'Noto Serif JP', sans-serif;
     color: #8d6e63;
 }
+
+.sub {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    gap: 10px;
+}
+
+
+.sub input,
+.sub select,
+.sub button {
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid #ccab94;
+    border-radius: 5px;
+}
+
+.sub__search {
+    width: 30%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__gender {
+    width: 10%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__category {
+    width: 20%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__date {
+    width: 15%;
+    background-color: #f9f9f9;
+    color: #4b3f38;
+}
+
+.sub__submit {
+    width: 10%;
+    background-color: #8d6e63 ;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sub__reset {
+    width: 10%;
+    height: 41px;
+    display: flex;
+    border: 2px solid #ccab94;
+    align-items: center;
+    justify-content: center;
+    background-color:  #ccab94;
+}
+
+.reset {
+    color: #fff;
+    text-decoration: none;
+}
+
+

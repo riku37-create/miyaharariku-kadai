@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-use App\Http\Livewire\Admin;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +19,12 @@ Route::post('/thanks', [ContactController::class, 'store']);
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin', Admin::class)->name('admin');
+    Route::get('/admin', [ContactController::class, 'admin']);
 });
+Route::middleware(['auth'])->group(function () {
+    Route::get('/search', [ContactController::class, 'search']);
+});
+
 
 
 
